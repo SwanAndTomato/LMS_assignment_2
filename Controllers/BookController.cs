@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LMS.Controllers
 {
-    // BookController.cs
+
     [Route("api/[controller]")]
     [ApiController]
     public class BookController : ControllerBase
@@ -12,7 +12,7 @@ namespace LMS.Controllers
 
         public BookController()
         {
-            // Initialize with some example data
+  
             _books = new List<Book>
         {
             new Book { Id = 1, Title = "Book 1", Author = "Author 1" },

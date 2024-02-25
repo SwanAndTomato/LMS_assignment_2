@@ -6,11 +6,10 @@ namespace LMS.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Title is required")]
         public string Title { get; set; }
-
+        [Required(ErrorMessage = "Author is required")]
         public string Author { get; set; }
 
-        // Other properties as needed
     }
 }
